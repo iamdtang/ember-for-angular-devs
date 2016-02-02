@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="ember-for-angular">
+<head>
+  <meta charset="UTF-8">
+  <title>Ember for Angular</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li>
+        <a ui-sref="about">About</a>
+      </li>
+      <li>
+        <a ui-sref="contact">Contact</a>
+        <ul>
+          <li>
+            <a ui-sref="contact.tech-support">Tech Support</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div ui-view></div>
+
+<script src="/node_modules/angular/angular.js"></script>
+<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/main.js"></script>
+
+</body>
+</html>
